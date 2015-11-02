@@ -48,6 +48,9 @@ h6 {
   dd {
     margin: 0;
   }
+  dd a {
+    word-wrap: break-word;
+  }
 }
 sup {
   line-height: 1;
