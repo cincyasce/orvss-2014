@@ -1,0 +1,7 @@
+<ivy-module version="2.0">
+  <info organisation="com.orvss" module="orvss" />
+  <dependencies>
+    <dependency org="org.freemarker" name="freemarker" rev="${freemarker.version}" />
+    <dependency org="net.sourceforge.fmpp" name="fmpp" rev="${fmpp.version}" />
+  </dependencies>
+</ivy-module>

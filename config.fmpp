@@ -1,0 +1,16 @@
+# encoding: UTF-8
+sourceEncoding: UTF-8
+outputEncoding: UTF-8
+urlEscapingCharset: UTF-8
+sourceRoot: src
+outputRoot: build
+logFile: log.fmpp
+datetimeFormat: "MMMM d, yyyy h:mm a zzz"
+caseSensitive
+borders: [
+  header("<#import '/templates/common.ftl' as c />", **/*.html, /pages/*.ftl)
+]
+modes: [
+  ignore(/templates/, /less/, rev-manifest.json, .DS_Store)
+  copy(*.png, crossdomain.xml, *.html, *.ico, *.txt, *.htaccess)
+]

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="all" name="orvss"
+        xmlns:ivy="antlib:org.apache.ivy.ant"
+        xmlns:u="http://orvss.com/ant-utils">
+
+	<!-- ================================================================== -->
+	<!-- Properties and filtering                                           -->
+	<!-- ================================================================== -->
+
+    <!-- classpath -->
+	<path id="classpath.path">
+		<fileset dir="lib" erroronmissingdir="false">
+			<include name="*.jar" />
+		</fileset>
+		<pathelement path="${ant.jar.path}" />
+        <pathelement path="${ivy.home}" />
+	</path>
+
+    <!-- build properties -->
+	<property name="environment" value="dev" />
+	<loadproperties srcFile="${basedir}/build.properties" />
+
+    <!-- ivy properties -->
+    <condition property="ivy.home" value="${env.IVY_HOME}">
+      <isset property="env.IVY_HOME" />
+    </condition>
+    <property name="ivy.home" value="${user.home}/.ant" />
+    <property name="ivy.jar.dir" value="${ivy.home}/lib" />
+    <property name="ivy.jar.file" value="${ivy.jar.dir}/ivy.jar" />
+
+	<!-- ================================================================== -->
+	<!-- Tasks                                                              -->
+	<!-- ================================================================== -->
+
+	<taskdef name="fmpp" classname="fmpp.tools.AntTask" onerror="ignore">
+		<classpath refid="classpath.path" />
+	</taskdef>
+
+	<!-- ================================================================== -->
+	<!-- Targets                                                            -->
+	<!-- ================================================================== -->
+
+	<target name="all" description="Run all ant tasks">
+		<antcall target="init" />
+		<antcall target="build" />
+	</target>
+
+	<target name="init" description="Run all init tasks">
+        <antcall target="download-ivy" />
+		<antcall target="ivy-deps" />
+        <antcall target="npm-deps" />
+	</target>
+
+	<target name="build" description="Build site">
+		<!-- <antcall target="styles" /> -->
+		<antcall target="fmpp" />
+	</target>
+
+	<!-- ================================================================== -->
+	<!-- Dependencies                                                       -->
+	<!-- ================================================================== -->
+
+    <!-- download Ivy from web site so that it can be used even without
+        any special installation -->
+    <target name="download-ivy" unless="offline">
+        <mkdir dir="${ivy.jar.dir}" />
+        <get src="http://repo2.maven.org/maven2/org/apache/ivy/ivy/${ivy.version}/ivy-${ivy.version}.jar"
+                dest="${ivy.jar.file}"
+                usetimestamp="true" />
+    </target>
+
+	<target name="ivy-deps" description="Retrieve dependencies with ivy">
+		<ivy:retrieve />
+	</target>
+
+	<target name="npm-deps" description="Install npm packages">
+		<exec executable="npm" dir="${basedir}"
+                failonerror="true" osfamily="unix">
+			<arg line="install" />
+		</exec>
+		<exec executable="cmd" dir="${basedir}"
+                failonerror="true" osfamily="windows">
+			<arg line="/c npm install" />
+		</exec>
+	</target>
+
+	<!-- ================================================================== -->
+	<!-- Build                                                              -->
+	<!-- ================================================================== -->
+
+	<target name="fmpp">
+		<fmpp configuration="${basedir}/config.fmpp" />
+	</target>
+</project>
