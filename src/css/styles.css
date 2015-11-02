@@ -162,8 +162,14 @@ address {
 .event-menu {
   border-bottom: 1px solid #dddddd;
   border-top: 1px solid #dddddd;
-  padding: 24px 0;
+  padding: 15px 0;
   text-align: center;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .event-menu {
+    font-size: 16px;
+  }
 }
 .event-menu li {
   display: inline-block;
@@ -201,6 +207,7 @@ address {
 .schedule dt {
   display: block;
   border-top: 1px solid #dddddd;
+  border-left: 3px solid #dddddd;
   font-size: 14px;
   margin-bottom: 12px;
   margin-top: 15px;
