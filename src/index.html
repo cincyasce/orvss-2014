@@ -1,14 +1,18 @@
-<@page.layout subtitle="Coming soon">
-    <@callout />
+<#ftl strip_text=true />
 
-    <@menu />
-    <@overview />
-    <@deadlines />
-    <@keynote />
-    <@schedule />
-    <@contact />
-    <@registration />
-    <@sponsors />
+<@page.layout subtitle="Coming soon">
+    <#compress>
+        <@callout />
+
+        <@menu />
+        <@overview />
+        <@deadlines />
+        <@keynote />
+        <@schedule />
+        <@contact />
+        <@registration />
+        <@sponsors />
+    </#compress>
 </@page.layout>
 
 
@@ -131,58 +135,75 @@
 
 
 <#macro contact>
-    <h2 id="contact">Contact</h2>
+    <#compress>
+        <h2 id="contact">Contact</h2>
 
-    <#list event.contact?keys as key>
-        <#if key == "registration">
-            <h3>Registration</h3>
-        <#elseif key == "exhibitors">
-            <h3>Exhibitors</h3>
-        </#if>
+        <#list event.contact?keys as key>
+            <#if key == "registration">
+                <h3>Registration</h3>
+            <#elseif key == "exhibitors">
+                <h3>Exhibitors</h3>
+            </#if>
 
-        <#local contactOption = event.contact[key] />
+            <#local contactOption = event.contact[key] />
 
-        ${contactOption.name}<#if contactOption.title??>, ${contactOption.title!}</#if><br>
-        <a href="mailto:${contactOption.email}">${contactOption.email}</a><br>
-        <a href="tel:${contactOption.phone?join("")}" class="phone-number">${contactOption.phone?join("-")}</a><br>
-    </#list>
+            ${contactOption.name}<#if contactOption.title??>, ${contactOption.title!}</#if><br>
+            <a href="mailto:${contactOption.email}">${contactOption.email}</a><br>
+            <a href="tel:${contactOption.phone?join("")}" class="phone-number">${contactOption.phone?join("-")}</a><br>
+        </#list>
 
-    <h3>Location and Lodging</h3>
+        <h3>Location and Lodging</h3>
 
-    <@address showLodging=true />
-
+        <@address showLodging=true />
+    </#compress>
 </#macro>
 
 
 <#macro schedule>
-    <h2 id="schedule">Schedule</h2>
+    <h2 id="schedule">Schedule</h2><#t>
 
-    <p>Seminar schedule has not been finalized as of September 29, 2015 and will be  available soon after all presentations have been selected.</p>
-    <p>Registration for the ORVSS XLVI Seminar is planned to start at 7:30 AM, with the program expected to extend from 8:15 AM until 4:45 PM.</p>
-    <p>It is anticipated that 7.5 PDHs will be awarded at the completion of the  seminar.</p>
+    <p>Seminar schedule has not been finalized as of September 29, 2015 and will be available soon after all presentations have been selected.</p><#t>
+    <p>Registration for the ORVSS XLVI Seminar is planned to start at 7:30 AM, with the program expected to extend from 8:15 AM until 4:45 PM.</p><#t>
+    <p>It is anticipated that 7.5 PDHs will be awarded at the completion of the  seminar.</p><#t>
 
-    <#--
-    <table class="schedule-table">
-        <tbody>
+    <#compress>
+    <table class="schedule-table"><#t>
+        <tbody><#t>
             <#list event.schedule as item>
-                <tr>
-                    <td>${item.time[0]?time("hh:mm a")?string("h:mm")}–${item.time[1]?time("hh:mm a")?string("h:mm a")?lower_case}</td>
-                    <td>
-                        ${item.name}
-                        <#if item.speaker??>
-                            <br>${item.speaker.name}<#if item.speaker.title??>, ${item.speaker.title}</#if><#rt>
-                            <#if item.speaker.company??>, ${item.speaker.company}</#if><#lt>
+                <tr><#t>
+                    <td>${item.time[0]?time("hh:mm a")?string("h:mm")}–${item.time[1]?time("hh:mm a")?string("h:mm a")?lower_case}</td><#t>
+                    <td><#t>
+                        ${item.name}<#t>
+                        <#if item.speakers?? || item.speaker??>–</#if>
+                        <#if item.speakers??>
+                            <#list item.speakers as person>
+                                <@speaker person=person /><#t>
+                                <#if (item.speakers?size > 2)>
+                                    <#if person_has_next>, </#if><#t>
+                                <#else>
+                                    <#if person_has_next> and </#if><#t>
+                                </#if>
+                            </#list>
+                        <#elseif item.speaker??>
+                            <@speaker person=item.speaker /><#t>
                         </#if>
-                    </td>
-                </tr>
+                    </td><#t>
+                </tr><#t>
             </#list>
-        </tbody>
-    </table>
--->
+        </tbody><#t>
+    </table><#t>
+    </#compress>
+</#macro>
+
+<#macro speaker person>
+    ${person.name}<#if person.title??>, ${person.title}</#if><#rt>
+    <#if person.company??>, ${person.company}</#if><#lt>
 </#macro>
 
 <#macro registration>
     <h2 id="registration">Registration</h2>
+
+    <p>Note: To register via mail, download the <a href="${event.pdf}">ORVSS XLVI Flyer</a> and use the registration form.</p>
 
     <@form />
 

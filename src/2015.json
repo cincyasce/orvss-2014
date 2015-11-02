@@ -2,6 +2,7 @@
     "host": "Kentucky Geotechnical Engineering Group",
     "topic": "Grouting Solutions to Geotechnical Problems",
     "date": "2015-12-16",
+    "pdf": "ORVSS XLVI Seminar.pdf",
     "address": {
         "line1": "Griffin Gate Marriot Resort & Spa",
         "line2": "1800 Newtown Pike",
@@ -69,84 +70,159 @@
             "time": ["6:30 am", "7:30 am"]
         },
         {
-            "name": "Registration",
-            "time": ["7:30 am", "8:15 am"]
+            "name": "<strong>Registration</strong>",
+            "time": ["7:20 am", "8:00 am"]
         },
         {
             "name": "Welcome Remarks",
-            "time": ["8:15 am", "8:30 am"],
+            "time": ["8:00 am", "8:15 am"]
+        },
+        {
+            "name": "“Grout Curtain Construction for the Thornton Reservoir Project”",
+            "time": ["8:15 am", "8:45 am"],
+            "speakers": [
+                {
+                    "name": "Jonathon R. Bulger",
+                    "title": "PE"
+                },
+                {
+                    "name": "Raymond J. Franz",
+                    "title": "PE, D.GE",
+                    "company": "Hayward Baker Inc."
+                }
+            ]
+        },
+        {
+            "name": "“Grouting Solutions for Cincinnati Music Hall”",
+            "time": ["8:45 am", "9:15 am"],
             "speaker": {
-                "name": "TBD"
+                "name": "George C. Webb",
+                "title": "PE, LEED AP",
+                "company": "Terracon"
             }
         },
         {
-            "name": "TBD",
-            "time": ["8:30 am", "9:05 am"]
+            "name": "“Jet Grouting Solution for the Resolution of Offshore Bridge Pier Retrofit Challenges”",
+            "time": ["9:15 am", "9:45 am"],
+            "speakers": [
+                {
+                    "name": "Lucian P. Spiteri",
+                    "title": "PE"
+                },
+                {
+                    "name": "John M. Stanbury"
+                },
+                {
+                    "name": "Alberto Morgante",
+                    "company": "Moretrench"
+                }
+            ]
         },
         {
-            "name": "TBD",
-            "time": ["9:05 am", "9:40 am"]
+            "name": "<strong>Break / Technical Session</strong>",
+            "time": ["9:45 am", "10:15 am"]
         },
         {
-            "name": "TBD",
-            "time": ["9:40 am", "10:15 am"]
-        },
-        {
-            "name": "<strong>Break</strong>",
-            "time": ["10:15 am", "10:35 am"]
-        },
-        {
-            "name": "TBD",
-            "time": ["10:35 am", "11:10 am"]
-        },
-        {
-            "name": "TBD",
-            "time": ["11:10 am", "11:45 am"]
-        },
-        {
-            "name": "<strong>Lunch</strong>",
-            "time": ["11:45 am", "12:35 pm"]
-        },
-        {
-            "name": "Keynote Introduction",
-            "time": ["12:35 pm", "12:45 pm"],
+            "name": "“Formation Grouting for the Port of Miami Tunnel”",
+            "time": ["10:15 am", "10:45 am"],
             "speaker": {
-                "name": "Daniel Gilbert",
-                "title": "PE",
-                "company": "Stantec Consulting Services Inc."
+                "name": "Rick Deschamps",
+                "title": "PE, PhD",
+                "company": "Nicholson Construction Co."
             }
         },
         {
-            "name": "<strong>Keynote</strong>: TBD",
-            "time": ["12:45 pm", "1:40 pm"],
+            "name": "“Insitu Stabilization of Soils by Injection of High-Density Polyurethane: Principles and Applications”",
+            "time": ["10:45 am", "11:15 am"],
+            "speaker": {
+                "name": "Randall W. Brown",
+                "title": "PE, PhD",
+                "company": "URETEK USA, Inc."
+            }
+        },
+        {
+            "name": "“Laboratory Study of Acrylate Grout”",
+            "time": ["11:15 am", "11:45 am"],
+            "speakers": [
+                {
+                    "name": "L. Sebastian Bryson",
+                    "title": "PE, PhD, MASCE"
+                },
+                {
+                    "name": "Ryan Ortiz",
+                    "title": "EIT",
+                    "company": "University of Kentucky and Terracon Consultants, Inc."
+                }
+            ]
+        },
+        {
+            "name": "<strong>Lunch — Keynote Introduction</strong>",
+            "time": ["11:45 am", "12:45 pm"]
+        },
+        {
+            "name": "Keynote Speaker",
+            "time": ["12:45 pm", "1:45 pm"],
             "speaker": {
                 "name": "James Warner",
-                "title": "Consulting Engineer"
+                "title": "Consulting Engineer",
+                "company": "Warner Engineering Services"
             }
         },
         {
-            "name": "TBD",
-            "time": ["1:40 pm", "2:15 pm"]
+            "name": "<strong>Break / Technical Session</strong>",
+            "time": ["1:45 pm", "2:00 pm"]
         },
         {
-            "name": "<strong>Break</strong>",
-            "time": ["2:15 pm", "2:45 pm"]
+            "name": "“Mine Remediation at the I-470/Pryor Road Interchange”",
+            "time": ["2:00 pm", "2:30 pm"],
+            "speaker": {
+                "name": "Sheryl D. Gallagher",
+                "title": "PE",
+                "company": "GEOTECHNOLOGY, INC."
+            }
         },
         {
-            "name": "TBD",
-            "time": ["2:45 pm", "3:20 pm"]
+            "name": "“Rough River Dam: Foundation Investigation and Remediation through Grouting”",
+            "time": ["2:30 pm", "3:00 pm"],
+            "speaker": {
+                "name": "Will Ailstock",
+                "title": "PE",
+                "company": "USACE Louisville District"
+            }
         },
         {
-            "name": "TBD",
-            "time": ["3:20 pm", "3:55 pm"]
+            "name": "“Franklin County Court House in Frankfort, Kentucky” ",
+            "time": ["3:00 pm", "3:30 pm"],
+            "speaker": {
+                "name": "Chris Griggs",
+                "company": "Dwyer Companies"
+            }
         },
         {
-            "name": "TBD",
-            "time": ["3:55 pm", "4:30 pm"]
+            "name": "<strong>Break / Technical Session</strong>",
+            "time": ["3:30 pm", "4:00 pm"]
         },
         {
-            "name": "<strong>Closing Remarks</strong>",
-            "time": ["4:30 pm", "4:45 pm"]
+            "name": "“The Varied Use of Compaction Grouting for Ground Improvement and Structure Rehabilitation”",
+            "time": ["4:00 pm", "4:30 pm"],
+            "speaker": {
+                "name": "Tom Szynakiewicz",
+                "title": "PE, D.GE, Director",
+                "company": "Grouting and Foundation Division, GeoStabilization International"
+            }
+        },
+        {
+            "name": "“Optimization of Jet Grouting Technology to Solve Challenging Urban Site Conditions”",
+            "time": ["4:30 pm", "5:00 pm"],
+            "speaker": {
+                "name": "James C. Myers",
+                "title": "PE",
+                "company": "Moretrench"
+            }
+        },
+        {
+            "name": "<strong>Adjourn</strong>",
+            "time": ["5:00 pm", "5:05 pm"]
         }
     ],
     "registration": {
