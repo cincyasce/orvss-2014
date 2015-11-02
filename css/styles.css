@@ -47,22 +47,22 @@ address {
 .page-width {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 @media (min-width: 768px) {
   .page-width {
-    width: 720px;
+    width: 744px;
   }
 }
 @media (min-width: 992px) {
   .page-width {
-    width: 944px;
+    width: 968px;
   }
 }
 @media (min-width: 1200px) {
   .page-width {
-    width: 1152px;
+    width: 1176px;
   }
 }
 .page-header {
