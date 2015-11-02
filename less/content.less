@@ -49,6 +49,14 @@
     dd {
       display: inline-block;
     }
+
+    dd {
+      &:last-child {
+        &:before {
+          content: " @ ";
+        }
+      }
+    }
   }
 }
 
