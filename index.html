@@ -13,33 +13,34 @@
     <link rel="stylesheet" type="text/css" href="css/styles.min.css">
   </head>
   <body>
-    <main class="page-wrapper" role="main" itemscope itemtype="http://schema.org/BusinessEvent">
+    <main class="page-width page-wrapper" role="main" itemscope itemtype="http://schema.org/BusinessEvent">
       <meta itemprop="eventStatus" content="http://schema.org/EventScheduled">
       <link itemprop="sameAs" href="http://orvss.com">
 
-      <header>
+      <header class="page-header">
         <h1 itemprop="name">Ohio River Valley Soil Seminar XLV</h1>
         <p>Geotechnical aspects of waterfront development</p>
 
-        <time datetime="2014-10-17">Friday, October 17, 2014</time><br>
+        <dl class="event-meta">
+          <dt class="sr-only">Date</dt>
+          <dd><time datetime="2014-10-17">October 17, 2014</time></dd>
 
-        <div class="location">
-          <a href="http://www.horseshoecincinnati.com">Horseshoe Cincinnati</a>
-          1000 Broadway Cincinnati, OH 45202
-        </div>
+          <dt class="sr-only">Location</dt>
+          <dd>@ <a href="http://www.horseshoecincinnati.com">Horseshoe Cincinnati</a></dd>
+        </dl>
       </header>
 
       <nav>
-        <h2>Event Information</h2>
-        <ul role="menu">
-          <li><a href="overview">Overview</a></li>
-          <li><a href="#date">Date</a></li>
-          <li><a href="#address">Address</a></li>
-          <li><a href="#keynote-speaker">Keynote speaker</a></li>
-          <li><a href="#agenda">Tenative agenda</a></li>
-          <li><a href="#contact-information">Contact information</a></li>
-          <li><a href="#registration">Registration</a></li>
-          <li><a href="#sponsors">Sponsors</a></li>
+        <h2 class="sr-only">Event Information</h2>
+        <ul role="menu" class="event-menu">
+          <li><a href="overview">Overview</a></li><!--
+       --><li><a href="#date">Date</a></li><!--
+       --><li><a href="#address">Address</a></li><!--
+       --><li><a href="#keynote-speaker">Keynote speaker</a></li><!--
+       --><li><a href="#agenda">Tenative agenda</a></li><!--
+       --><li><a href="#contact-information">Contact information</a></li><!--
+       --><li><a href="#registration">Registration</a></li><!--
+       --><li><a href="#sponsors">Sponsors</a></li>
         </ul>
       </nav>
 
@@ -52,7 +53,8 @@
       <h2 id="date">Date</h2>
 
       <time datetime="2014-10-17">Friday, October 17, 2014</time><br>
-      Exhibitor registration and setup begins at <time itemprop="startDate" datetime="2014-10-17T10:30Z">6:30 a.m EDT</time>
+      Exhibitor registration and setup begins at <time itemprop="startDate" datetime="2014-10-17T10:30Z">6:30 a.m EDT</time><br>
+      <a href="#schedule">Full schedule</a>
 
       <h2 id="address">Address</h2>
 
@@ -86,7 +88,7 @@
 
       <h2 id="agenda">Tentative Agenda – Friday, October 17, 2014</h2>
 
-      <ol>
+      <ol class="schedule">
         <li itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
           <time itemprop="startDate" datetime="2014-10-17T10:30Z">6:30</time>–<time itemprop="endDate" datetime="2014-10-17T11:30Z">7:30 am</time>
           <span itemprop="name">Exhibitor Registration and Setup</span>
@@ -385,14 +387,17 @@
 
 
     </main>
-    <footer>
-      Website created by
-      <span itemscope itemtype="http://schema.org/Person">
-        <a itemprop="url" href="http://edendramis.com" rel="author">
-          <span itemprop="name">Evangelia Dendramis</span>
-        </a>
-      </span>
-    </footer>
+
+    <div class="page-width">
+      <footer class="page-footer">
+        Website created by
+        <span itemscope itemtype="http://schema.org/Person">
+          <a itemprop="url" href="http://edendramis.com" rel="author">
+            <span itemprop="name">Evangelia Dendramis</span>
+          </a>
+        </span>
+      </footer>
+    </div>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

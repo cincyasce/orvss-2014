@@ -16,6 +16,15 @@ body {
   font-size: 1.6rem;
 }
 
+a {
+  color: @link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: @link-hover-color;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -24,4 +33,12 @@ h5,
 h6 {
   font-weight: bold;
   line-height: 1.5;
+}
+
+dd {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
 }

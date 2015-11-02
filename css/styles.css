@@ -1,3 +1,9 @@
+.event-menu,
+.schedule {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
 * {
   -moz-box-sizing: border-box;
        box-sizing: border-box;
@@ -16,6 +22,13 @@ body {
   margin: 0;
   font-size: 1.6rem;
 }
+a {
+  color: #0000ff;
+  text-decoration: none;
+}
+a:hover {
+  color: #0000cc;
+}
 h1,
 h2,
 h3,
@@ -24,4 +37,91 @@ h5,
 h6 {
   font-weight: bold;
   line-height: 1.5;
+}
+dd {
+  margin: 0;
+}
+address {
+  font-style: normal;
+}
+.page-width {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+@media (min-width: 768px) {
+  .page-width {
+    width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .page-width {
+    width: 944px;
+  }
+}
+@media (min-width: 1200px) {
+  .page-width {
+    width: 1152px;
+  }
+}
+.page-header {
+  text-align: center;
+  padding: 3.3rem 0;
+}
+.page-header h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2.4rem;
+}
+@media (min-width: 768px) {
+  .page-header h1 {
+    font-size: 3rem;
+  }
+}
+.page-header p {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+@media (min-width: 768px) {
+  .page-header p {
+    font-size: 2.1rem;
+  }
+}
+.page-header .event-meta {
+  margin: 0;
+}
+.page-header .event-meta dt,
+.page-header .event-meta dd {
+  display: inline-block;
+}
+.page-header .event-meta dd {
+  margin: 0;
+}
+.event-menu {
+  border-bottom: 0.1rem solid #dddddd;
+  border-top: 0.1rem solid #dddddd;
+  padding: 2.4rem 0;
+  text-align: center;
+}
+.event-menu li {
+  display: inline-block;
+}
+.event-menu li a {
+  padding: .6rem 1.2rem;
+}
+.page-footer {
+  text-align: center;
+  border-top: 0.1rem solid #dddddd;
+  padding: 2.4rem 0;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
