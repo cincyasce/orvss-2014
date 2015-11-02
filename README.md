@@ -1,4 +1,3 @@
-orvss-2014
-==========
+# Ohio River Valley Soil Seminar
 
-Ohio River Valley Soil Seminar
+http://orvss.com
