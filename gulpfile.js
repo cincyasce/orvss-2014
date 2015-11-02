@@ -14,7 +14,7 @@ var paths = {
 };
 
 gulp.task('styles', function() {
-  gulp.src('./less/styles.less')
+  gulp.src(['./less/styles.less', './less/print.less'])
     .pipe(
       less({ paths: paths.less })
     )

@@ -41,7 +41,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1.5;
 }
 dd {
@@ -118,14 +118,44 @@ address {
   }
 }
 .callout {
-  padding: 18px 0;
+  text-align: center;
+  margin: 30px 0;
 }
-.callout time {
+@media (min-width: 768px) {
+  .callout {
+    margin: 45px 0;
+  }
+}
+.callout p {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 0;
+}
+.callout p + p {
+  margin-top: 12px;
+}
+@media (min-width: 768px) {
+  .callout p {
+    font-size: 36px;
+  }
+  .callout p + p {
+    margin-top: 0;
+  }
+}
+.callout .date {
   display: block;
   margin-top: 18px;
+  margin-bottom: 12px;
 }
-.callout address {
-  margin-bottom: 18px;
+.callout .date,
+.callout .address {
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .callout .date,
+  .callout .address {
+    font-size: 24px;
+  }
 }
 .event-menu {
   border-bottom: 1px solid #dddddd;
