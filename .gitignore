@@ -26,4 +26,4 @@ node_modules
 
 .project
 .settings
-
+.DS_Store

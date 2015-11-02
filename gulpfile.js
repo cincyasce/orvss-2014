@@ -10,7 +10,7 @@ var prefix = require('gulp-autoprefixer');
 
 var paths = {
   less: path.join(__dirname, 'node_modules'),
-  target: path.join(__dirname, 'css')
+  target: path.join(__dirname, 'src', 'css')
 };
 
 gulp.task('styles', function() {
