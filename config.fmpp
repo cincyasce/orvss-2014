@@ -12,5 +12,5 @@ borders: [
 ]
 modes: [
   ignore(/templates/, /less/, rev-manifest.json, .DS_Store)
-  copy(*.png, crossdomain.xml, *.html, *.ico, *.txt, *.htaccess)
+  copy(*.png, crossdomain.xml, *.ico, *.txt, *.htaccess, CNAME)
 ]

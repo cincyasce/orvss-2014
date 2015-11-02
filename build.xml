@@ -52,7 +52,7 @@
 	</target>
 
 	<target name="build" description="Build site">
-		<!-- <antcall target="styles" /> -->
+		<antcall target="styles" />
 		<antcall target="fmpp" />
 	</target>
 
@@ -90,5 +90,15 @@
 
 	<target name="fmpp">
 		<fmpp configuration="${basedir}/config.fmpp" />
+	</target>
+
+    <!-- ================================================================== -->
+	<!-- Compile Styles                                                     -->
+	<!-- ================================================================== -->
+
+	<target name="styles">
+		<exec executable="node" failonerror="true" dir="${basedir}">
+			<arg line="node_modules/gulp/bin/gulp.js" />
+		</exec>
 	</target>
 </project>

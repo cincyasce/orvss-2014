@@ -1,0 +1,11 @@
+#!/bin/bash
+
+formattedDate=`date`
+
+cd build
+git init
+git add -A
+git remote add origin https://github.com/cincyasce/orvss.com.git
+git commit -m "Generated files $formattedDate"
+git push -f origin master:gh-pages
+rm -fr .git
