@@ -4,14 +4,11 @@
   list-style-type: none;
 }
 .page-header::before,
-.page-header::after,
-.schedule dt + dd::before,
-.schedule dt + dd::after {
+.page-header::after {
   content: " ";
   display: table;
 }
-.page-header::after,
-.schedule dt + dd::after {
+.page-header::after {
   clear: both;
 }
 * {
@@ -20,7 +17,6 @@
 }
 html {
   font-family: sans-serif;
-  font-size: 62.5%;
   color: #333333;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
@@ -30,7 +26,6 @@ html {
 }
 body {
   margin: 0;
-  font-size: 1.6rem;
   font-size: 16px;
 }
 a {
@@ -80,73 +75,84 @@ address {
   }
 }
 .page-header {
+  background-color: #000;
+  color: #FFF;
   text-align: center;
-  padding-bottom: 3.3rem;
+  padding: 6px 0;
+}
+@media (min-width: 768px) {
+  .page-header {
+    text-align: left;
+  }
 }
 .page-header .logo {
-  max-width: 100%;
+  max-width: 50%;
 }
 @media (min-width: 768px) {
   .page-header .logo {
-    width: 400px;
-    height: 214px;
-    background-color: #000;
+    height: 76px;
+    width: 142px;
+    float: left;
+    margin-right: 18px;
   }
 }
 .page-header h1 {
-  margin-top: 0;
   margin-bottom: 0;
-  font-size: 33px;
-  font-size: 3.3rem;
+  font-size: 21px;
+  font-weight: normal;
 }
 @media (min-width: 768px) {
   .page-header h1 {
-    font-size: 3rem;
+    font-size: 30px;
+    float: left;
+    margin-top: 0;
   }
 }
 .page-header p {
   margin-top: 0;
-  font-size: 1.8rem;
+  font-size: 15px;
 }
 @media (min-width: 768px) {
   .page-header p {
-    font-size: 2.1rem;
+    font-size: 21px;
+    float: left;
+    margin-bottom: 0;
   }
 }
-.page-header .event-meta {
-  margin: 0;
+.callout {
+  padding: 18px 0;
 }
-.page-header .event-meta dt,
-.page-header .event-meta dd {
-  display: inline-block;
+.callout time {
+  display: block;
+  margin-top: 18px;
 }
-.page-header .event-meta .location:before {
-  content: " @ ";
+.callout address {
+  margin-bottom: 18px;
 }
 .event-menu {
-  border-bottom: 0.1rem solid #dddddd;
-  border-top: 0.1rem solid #dddddd;
-  padding: 2.4rem 0;
+  border-bottom: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
+  padding: 24px 0;
   text-align: center;
 }
 .event-menu li {
   display: inline-block;
 }
 .event-menu li a {
-  padding: .6rem 1.2rem;
+  padding: 6px 12px;
 }
 .keynote-details img {
   width: 263px;
   height: 311px;
   background-color: #222;
-  border: .1rem solid #333;
+  border: 1px solid #333;
 }
 .keynote-details .name {
-  font-size: 2.1rem;
+  font-size: 21px;
   font-weight: bold;
 }
 .keynote-details .address {
-  margin-top: 1.2rem;
+  margin-top: 12px;
 }
 .schedule-header {
   margin-bottom: 0;
@@ -154,20 +160,67 @@ address {
 .schedule-header + h3 {
   margin-top: 0;
 }
+.schedule {
+  margin: 0 -12px;
+}
+@media (min-width: 768px) {
+  .schedule {
+    margin: 0;
+  }
+}
 .schedule dt {
-  width: 130px;
   display: block;
-  float: left;
+  border-top: 1px solid #dddddd;
+  font-size: 14px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  background-color: #f7f7f7;
+  padding: 6px 12px;
+}
+@media (min-width: 768px) {
+  .schedule dt {
+    border: 0;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    font-size: 16px;
+    width: 120px;
+    float: left;
+  }
 }
 .schedule dt + dd {
-  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .schedule dt + dd {
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 0;
+  }
 }
 .schedule dd {
-  display: block;
-  margin-left: 130px;
+  padding: 0 12px;
+  font-size: 14px;
 }
-.schedule dd + dt {
-  margin-top: 12px;
+@media (min-width: 768px) {
+  .schedule dd {
+    font-size: 16px;
+  }
+}
+.schedule dd:last-child {
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 6px;
+}
+@media (min-width: 768px) {
+  .schedule dd {
+    display: block;
+    margin-left: 120px;
+  }
+  .schedule dd + dt {
+    margin-top: 12px;
+  }
 }
 .schedule .break,
 .schedule .lunch,
@@ -176,8 +229,8 @@ address {
 }
 .page-footer {
   text-align: center;
-  border-top: 0.1rem solid #dddddd;
-  padding: 2.4rem 0;
+  border-top: 1px solid #dddddd;
+  padding: 24px 0;
 }
 .sr-only {
   position: absolute;
