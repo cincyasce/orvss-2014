@@ -95,9 +95,6 @@ address {
 .page-header .event-meta dd {
   display: inline-block;
 }
-.page-header .event-meta dd {
-  margin: 0;
-}
 .event-menu {
   border-bottom: 0.1rem solid #dddddd;
   border-top: 0.1rem solid #dddddd;
@@ -109,6 +106,10 @@ address {
 }
 .event-menu li a {
   padding: .6rem 1.2rem;
+}
+.schedule .time {
+  display: block;
+  margin-top: .6rem;
 }
 .page-footer {
   text-align: center;
