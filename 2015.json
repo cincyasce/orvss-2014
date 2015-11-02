@@ -1,0 +1,252 @@
+{
+    "host": "Kentucky Geotechnical Engineering Group",
+    "topic": "Grouting Solutions to Geotechnical Problems",
+    "date": "2015-12-16",
+    "pdf": "ORVSS XLVI Seminar.pdf",
+    "address": {
+        "line1": "Griffin Gate Marriot Resort & Spa",
+        "line2": "1800 Newtown Pike",
+        "city": "Lexington",
+        "state": "Kentucky",
+        "zip": "40511-1330",
+        "phone": ["877", "901", "6632"],
+        "url": "http://www.marriott.com/hotels/travel/lexky-griffin-gate-marriott-resort-and-spa/"
+    },
+    "overview": [
+        "The 46th Ohio River Valley Soils Seminar (ORVSS XLVI) will address grouting techniques and design methods employing these applications. Grouting is a versatile and effective solution which can be used to achieve a diverse range of objectives for many geotechnical issues encountered in civil engineering works.  For geotechnical and geology professionals, grouting is an important aspect of temporary works, including seepage and groundwater control, ground improvement, foundation support and many other geotechnical applications.",
+        "ORVSS XLVI will provide Geotechnical Engineers, Geologists, Contractors, Material Suppliers, and other geotechnical practitioners an opportunity to share innovative applications of grouting techniques to continue the advancement of our knowledge in this field."
+    ],
+    "deadlines": [
+        {
+            "name": "Receipt of typewritten one-page abstract",
+            "date": "2015-10-09"
+        },
+        {
+            "name": "Notice of acceptance",
+            "date": "2015-10-23"
+        },
+        {
+            "name": "Receipt of final presentation",
+            "date": "2015-11-13"
+        },
+        {
+            "name": "Final papers sent out for publishing",
+            "date": "2015-11-20"
+        },
+        {
+            "name": "Receipt of presentations for seminar",
+            "date": "2015-12-11"
+        }
+    ],
+    "keynote": {
+        "name": "James Warner",
+        "title": "Consulting Engineer",
+        "location": "Mariposa, California",
+        "image": "img/2015/keynote.jpg",
+        "description": [
+            "James Warner is an independent Consulting Engineer specializing in foundation and structural restoration, with emphasis on pressure grouting and the allied fields of structural problem diagnosis, material performance, testing, and the solution of construction problems.",
+            "As president and general manager of Warner Engineering Services in Los Angeles, California for 27 years, he directed the prosecution of several thousand significant projects within his area of specialization. To his credit are numerous inventions and developments relating to engineering and construction technology.",
+            "He is a Registered Professional Engineer as well as a Licensed Building and Engineering Contractor in California.  A Fellow and Life Member of the American Society of Civil Engineers, he served on the Publications Committee of the Construction Division and the Committee on Grouting from 1966 to 1982, heading several task projects.  He currently serves on the Geo-Institute Grouting Committee.",
+            "Mr. Warner has served on a wide variety of technical panels, advisory groups, and review boards as well as regularly appearing as a lecturer at universities and technical meetings throughout the world. He also has authored many publications associated with rehabilitation and application of grouting techniques."
+        ]
+    },
+    "contact": {
+        "registration": {
+            "name": "Ben Webster",
+            "title": "PE",
+            "email": "Ben.Webster@stantec.com",
+            "phone": ["859", "422", "3192"]
+        },
+        "exhibitors": {
+            "name": "Luis J. Arduz",
+            "title": "PE, MASCE",
+            "email": "Luis.Arduz@stantec.com",
+            "phone": ["859", "422", "3051"]
+        }
+    },
+    "schedule": [
+        {
+            "name": "Exhibitor Registration and Setup",
+            "time": ["6:30 am", "7:30 am"]
+        },
+        {
+            "name": "<strong>Registration</strong>",
+            "time": ["7:20 am", "8:00 am"]
+        },
+        {
+            "name": "Welcome Remarks",
+            "time": ["8:00 am", "8:15 am"]
+        },
+        {
+            "name": "“Grout Curtain Construction for the Thornton Reservoir Project”",
+            "time": ["8:15 am", "8:45 am"],
+            "speakers": [
+                {
+                    "name": "Jonathon R. Bulger",
+                    "title": "PE"
+                },
+                {
+                    "name": "Raymond J. Franz",
+                    "title": "PE, D.GE",
+                    "company": "Hayward Baker Inc."
+                }
+            ]
+        },
+        {
+            "name": "“Grouting Solutions for Cincinnati Music Hall”",
+            "time": ["8:45 am", "9:15 am"],
+            "speaker": {
+                "name": "George C. Webb",
+                "title": "PE, LEED AP",
+                "company": "Terracon"
+            }
+        },
+        {
+            "name": "“Jet Grouting Solution for the Resolution of Offshore Bridge Pier Retrofit Challenges”",
+            "time": ["9:15 am", "9:45 am"],
+            "speakers": [
+                {
+                    "name": "Lucian P. Spiteri",
+                    "title": "PE"
+                },
+                {
+                    "name": "John M. Stanbury"
+                },
+                {
+                    "name": "Alberto Morgante",
+                    "company": "Moretrench"
+                }
+            ]
+        },
+        {
+            "name": "<strong>Break / Technical Session</strong>",
+            "time": ["9:45 am", "10:15 am"]
+        },
+        {
+            "name": "“Formation Grouting for the Port of Miami Tunnel”",
+            "time": ["10:15 am", "10:45 am"],
+            "speaker": {
+                "name": "Rick Deschamps",
+                "title": "PE, PhD",
+                "company": "Nicholson Construction Co."
+            }
+        },
+        {
+            "name": "“Insitu Stabilization of Soils by Injection of High-Density Polyurethane: Principles and Applications”",
+            "time": ["10:45 am", "11:15 am"],
+            "speaker": {
+                "name": "Randall W. Brown",
+                "title": "PE, PhD",
+                "company": "URETEK USA, Inc."
+            }
+        },
+        {
+            "name": "“Laboratory Study of Acrylate Grout”",
+            "time": ["11:15 am", "11:45 am"],
+            "speakers": [
+                {
+                    "name": "L. Sebastian Bryson",
+                    "title": "PE, PhD, MASCE"
+                },
+                {
+                    "name": "Ryan Ortiz",
+                    "title": "EIT",
+                    "company": "University of Kentucky and Terracon Consultants, Inc."
+                }
+            ]
+        },
+        {
+            "name": "<strong>Lunch — Keynote Introduction</strong>",
+            "time": ["11:45 am", "12:45 pm"]
+        },
+        {
+            "name": "Keynote Speaker",
+            "time": ["12:45 pm", "1:45 pm"],
+            "speaker": {
+                "name": "James Warner",
+                "title": "Consulting Engineer",
+                "company": "Warner Engineering Services"
+            }
+        },
+        {
+            "name": "<strong>Break / Technical Session</strong>",
+            "time": ["1:45 pm", "2:00 pm"]
+        },
+        {
+            "name": "“Mine Remediation at the I-470/Pryor Road Interchange”",
+            "time": ["2:00 pm", "2:30 pm"],
+            "speaker": {
+                "name": "Sheryl D. Gallagher",
+                "title": "PE",
+                "company": "GEOTECHNOLOGY, INC."
+            }
+        },
+        {
+            "name": "“Rough River Dam: Foundation Investigation and Remediation through Grouting”",
+            "time": ["2:30 pm", "3:00 pm"],
+            "speaker": {
+                "name": "Will Ailstock",
+                "title": "PE",
+                "company": "USACE Louisville District"
+            }
+        },
+        {
+            "name": "“Franklin County Court House in Frankfort, Kentucky” ",
+            "time": ["3:00 pm", "3:30 pm"],
+            "speaker": {
+                "name": "Chris Griggs",
+                "company": "Dwyer Companies"
+            }
+        },
+        {
+            "name": "<strong>Break / Technical Session</strong>",
+            "time": ["3:30 pm", "4:00 pm"]
+        },
+        {
+            "name": "“The Varied Use of Compaction Grouting for Ground Improvement and Structure Rehabilitation”",
+            "time": ["4:00 pm", "4:30 pm"],
+            "speaker": {
+                "name": "Tom Szynakiewicz",
+                "title": "PE, D.GE, Director",
+                "company": "Grouting and Foundation Division, GeoStabilization International"
+            }
+        },
+        {
+            "name": "“Optimization of Jet Grouting Technology to Solve Challenging Urban Site Conditions”",
+            "time": ["4:30 pm", "5:00 pm"],
+            "speaker": {
+                "name": "James C. Myers",
+                "title": "PE",
+                "company": "Moretrench"
+            }
+        },
+        {
+            "name": "<strong>Adjourn</strong>",
+            "time": ["5:00 pm", "5:05 pm"]
+        }
+    ],
+    "registration": {
+        "earlyDeadline": "2015-11-21",
+        "prices": {
+            "student": {
+                "early": "$25",
+                "regular": "$50"
+            },
+            "nonStudent": {
+                "early": "$150",
+                "regular": "$175"
+            },
+            "exhibitors": {
+                "regular": "$425",
+                "additional": "$75"
+            }
+        }
+    },
+    "sponsors": [
+        "ASCE Cincinnati Section Geotechnical Group",
+        "Kentucky Geotechnical Engineering Group, ASCE",
+        "University of Cincinnati, Department of Civil and Environmental Engineering",
+        "University of Kentucky, Department of Civil Engineering",
+        "University of Louisville, Department of Civil and Environmental Engineering"
+    ]
+}
