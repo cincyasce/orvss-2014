@@ -4,4 +4,4 @@
 
 http://orvss.com
 
-The Ohio River Valley Soils Seminar is an annual event held to discuss regional geotechnical topics. Three ASCE sections take turns hosting the event each year: [Louisville ASCE](http://branches.asce.org/louisville/home), [Cincinnati ASCE](http://cincyasce.org), and [Kentucky ASCE](http://kyasce.org/).
+The Ohio River Valley Soils Seminar is an annual event held to discuss regional geotechnical topics. 
