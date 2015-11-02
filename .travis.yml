@@ -5,12 +5,8 @@ install: ant all
 
 
 after_success:
-  if ([ "$TRAVIS_BRANCH" == "master" ]); then
-    echo "This will deploy! $(date)"
-  else
-    echo "This will not deploy!"
-  fi
-
+  echo "This will deploy! $(date)"
+  
 node_js:
   - "0.12"
 
