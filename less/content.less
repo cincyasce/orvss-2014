@@ -25,8 +25,15 @@
 
   &:extend(.clearfix all);
 
-  img {
+  .logo {
     max-width: 100%;
+
+    @media (min-width: @screen-sm-min) {
+      //specify height in larger view to prevent redraw
+      width: 400px;
+      height: 214px;
+      background-color: #000;
+    }
   }
 
   h1 {
