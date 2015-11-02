@@ -1,7 +1,7 @@
 {
   "name": "orvss.com",
   "version": "0.0.0",
-  "description": "Source for the orvss.com",
+  "description": "Source for orvss.com",
   "repository": {
     "type": "git",
     "url": "https://github.com/cincyasce/orvss.com.git"
