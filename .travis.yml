@@ -3,17 +3,6 @@ language: java
 before_install: ant download-ivy
 install: ant all
 
-after_script:
-  - cd build
-  - git init
-  - git config --global user.email "evangeliad@gmail.com"
-  - git config --global user.name "Travis"
-  - git add -A
-  - git commit -m "snapshot $(date '+%m/%d/%y %H:%M')"
-  - git push -f "$REPO_URL" origin master:gh-pages
-  - rm -fr .git
-
-
 node_js:
   - "0.12"
 
@@ -29,7 +18,3 @@ notifications:
 
 jdk:
   - oraclejdk8
-
-env:
-  global:
-    - secure: "RpMgXxJcynEgWSTCCpkWoPIhN8bvSl3DdfkgwXLo330zAm20TBxLrt3DukuwWZJ7aC8iBnCBC2cqDQ512SX94Onp9H3+1Y2B2rMRf4gge31tiih4w5FVoQ4tQsG1JpVgMm2SnpOPK/SmdgLLqj7Jy2F7Sv0elirPR9lF9DYYj/w="
