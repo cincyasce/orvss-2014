@@ -152,6 +152,7 @@
         }
     ],
     "registration": {
+        "earlyDeadline": "2015-11-21",
         "prices": {
             "student": {
                 "early": "$25",

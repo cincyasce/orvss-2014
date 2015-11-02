@@ -63,6 +63,8 @@
         </#list>
     </ul><#t>
 </#macro>
+
+
 <#---
     Address
 -->
@@ -184,7 +186,10 @@
         </thead>
         <tbody>
             <tr>
-                <td>Early Full-time Student Registration</td>
+                <td>
+                    Early Full-time Student Registration
+                    (Postmarked by ${event.registration.earlyDeadline?date('yyyy-MM-dd')?string.long})
+                </td>
                 <td>${prices.student.early}</td>
             </tr>
             <tr>
@@ -199,7 +204,10 @@
         </thead>
         <tbody>
             <tr>
-                <td>Early Individual Registration</td>
+                <td>
+                    Early Individual Registration
+                    (Postmarked by ${event.registration.earlyDeadline?date('yyyy-MM-dd')?string.long})
+                </td>
                 <td>${prices.nonStudent.early}</td>
             </tr>
             <tr>
