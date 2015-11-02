@@ -211,7 +211,13 @@ address {
 }
 .schedule dd:last-child {
   border-bottom: 1px solid #CCC;
-  padding-bottom: 6px;
+  padding-bottom: 12px;
+}
+@media (min-width: 768px) {
+  .schedule dd:last-child {
+    border: 0;
+    padding-bottom: 0;
+  }
 }
 @media (min-width: 768px) {
   .schedule dd {
