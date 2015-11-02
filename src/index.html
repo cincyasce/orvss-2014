@@ -2,4 +2,20 @@
 
     <p>Information regarding the 2015 ORVSS Seminar will be posted soon!</p>
 
+    <@callout />
 </@page.layout>
+
+
+<#macro callout>
+    <div class="callout">
+        <p>${event.host}</p>
+        <p>46<sup>th</sup> Annual Ohio River Valley Soils Seminar</p>
+
+        <time class="date" datetime="${event.date}">${event.date}</time>
+        <address class="address">
+            <a href="http://www.horseshoecincinnati.com">Horseshoe Cincinnati</a><br>
+            1000 Broadway<br>
+            Cincinnati, OH 45202
+        </address>
+    </div>
+</#macro>

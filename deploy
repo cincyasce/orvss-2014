@@ -5,7 +5,7 @@ formattedDate=`date`
 cd build
 git init
 git add -A
-git remote add origin https://github.com/cincyasce/orvss.com.git
+git remote add origin https://github.com/orvss/orvss.github.io.git
 git commit -m "Generated files $formattedDate"
-git push -f origin master:gh-pages
+git push -f origin master
 rm -fr .git
