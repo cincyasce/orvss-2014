@@ -4,6 +4,12 @@ formattedDate=`date`
 
 cd build
 git init
+
+git config user.email "evangeliad@gmail.com"
+git config user.name "edendramis"
+git config remote.origin.url "https://github.com/cincyasce/orvss.com.git"
+
+
 git add -A
 git remote add origin https://github.com/cincyasce/orvss.com.git
 git commit -m "Generated files $formattedDate"
