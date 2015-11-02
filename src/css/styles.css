@@ -324,3 +324,16 @@ address {
   height: 225px;
   margin-top: 27px;
 }
+.registration-form .dropdown-label {
+  display: block;
+  margin-bottom: 6px;
+}
+.registration-form .dropdown {
+  border: 1px solid #ccc;
+  height: 42px;
+  line-height: 40px;
+  padding: 0 6px;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
