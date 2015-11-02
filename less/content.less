@@ -20,12 +20,20 @@
 //header
 .page-header {
   text-align: center;
-  padding: 3.3rem 0;
+  //padding: 3.3rem 0;
+  padding-bottom: 3.3rem;
+
+  &:extend(.clearfix all);
+
+  img {
+    max-width: 100%;
+  }
 
   h1 {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 2.4rem;
+    font-size: 33px;
+    font-size: 3.3rem;
 
     @media (min-width: @screen-sm-min) {
       font-size: 3rem;
@@ -50,11 +58,9 @@
       display: inline-block;
     }
 
-    dd {
-      &:last-child {
-        &:before {
-          content: " @ ";
-        }
+    .time {
+      &:after {
+        content: " @ ";
       }
     }
   }
@@ -79,7 +85,33 @@
   }
 }
 
+//keynote details
+.keynote-details {
+  img {
+    width: 263px;
+    height: 311px;
+    background-color: #222;
+    border: .1rem solid #333;
+  }
+
+  .name {
+    font-size: 2.1rem;
+    font-weight: bold;
+  }
+
+  .address {
+    margin-top: 1.2rem;
+  }
+}
+
 //schedule
+.schedule-header {
+  margin-bottom: 0;
+
+  & + h3 {
+    margin-top: 0;
+  }
+}
 .schedule {
   &:extend(.list-unstyled);
 

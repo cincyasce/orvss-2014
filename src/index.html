@@ -10,25 +10,29 @@
     <meta property="og:url" content="http://orvss.com">
     <meta property="og:description" content="Geotechnical aspects of waterfront development">
     <link rel="canonical" href="http://orvss.com">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/styles.min.css?v=2">
   </head>
-  <body>
-    <main class="page-width page-wrapper" role="main" itemscope itemtype="http://schema.org/BusinessEvent">
+  <body itemscope itemtype="http://schema.org/BusinessEvent">
+    <header class="page-header">
+      <img itemprop="image" src="img/orvss-logo.png" alt="ORVSS logo" title="ORVSS">
+      <h1 itemprop="name">Ohio River Valley Soil Seminar XLV</h1>
+      <p>Geotechnical Aspects of Waterfront Development</p>
+
+      <dl class="event-meta">
+        <dt class="sr-only">Date</dt>
+        <dd class="time"><time datetime="2014-10-17">October 17, 2014</time></dd>
+
+        <dt class="sr-only">Location</dt>
+        <dd><a href="#address">Horseshoe Cincinnati</a></dd>
+      </dl>
+    </header>
+    <main class="page-width page-wrapper" role="main">
       <meta itemprop="eventStatus" content="http://schema.org/EventScheduled">
       <link itemprop="sameAs" href="http://orvss.com">
 
-      <header class="page-header">
-        <h1 itemprop="name">Ohio River Valley Soil Seminar XLV</h1>
-        <p>Geotechnical Aspects of Waterfront Development</p>
 
-        <dl class="event-meta">
-          <dt class="sr-only">Date</dt>
-          <dd><time datetime="2014-10-17">October 17, 2014</time></dd>
-
-          <dt class="sr-only">Location</dt>
-          <dd><a href="#address">Horseshoe Cincinnati</a></dd>
-        </dl>
-      </header>
 
       <nav>
         <h2 class="sr-only">Event Information</h2>
@@ -53,7 +57,7 @@
       <h2 id="date">Date</h2>
 
       <time datetime="2014-10-17">Friday, October 17, 2014</time><br>
-      Exhibitor registration and setup begins at <time itemprop="startDate" datetime="2014-10-17T10:30Z">6:30 a.m EDT</time><br>
+      Exhibitor registration and setup begins at <time itemprop="startDate" datetime="2014-10-17T10:30Z">6:30 a.m EDT</time><br>
       <a href="#schedule">Full schedule</a>
 
       <h2 id="address">Address</h2>
@@ -72,21 +76,30 @@
 
       <h2 id="keynote-speaker">Keynote Speaker</h2>
 
-      <div itemprop="performer" itemscope itemtype="http://schema.org/Person">
-        <span itemprop="name">Tammy L. Conforti</span>, <span itemprop="honorificSuffix">P.E.</span><br>
-        <span itemprop="jobTitle">Levee Safety Program Manager</span>
-        <meta itemprop="worksFor" content="US Army Corps of Engineers">
+      <div class="keynote-details" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+        <img itemprop="image" src="img/keynote-speaker.jpg" alt="Keynote speaker" title="Tammy L. Conforti">
 
-        <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-          <span itemprop="streetAddress">441 G Street, NW<br>Room 3E62</span>
-          <span itemprop="addressLocality">Washington</span>, <span itemprop="addressRegion">DC</span> <span itemprop="postalCode">20314</span>
-        </address>
+        <div class="speaker">
+          <div class="name">
+            <span itemprop="name">Tammy L. Conforti</span>, <span itemprop="honorificSuffix">P.E.</span>
+          </div>
+          <span itemprop="jobTitle">Levee Safety Program Manager</span>
+          <meta itemprop="worksFor" content="US Army Corps of Engineers">
+
+          <address class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="streetAddress">441 G Street, NW<br>Room 3E62</span><br>
+            <span itemprop="addressLocality">Washington</span>, <span itemprop="addressRegion">DC</span> <span itemprop="postalCode">20314</span>
+          </address>
+        </div>
+
 
         <p>Ms. Conforti has worked for the US Army Corps of Engineers for 23 years in a variety of areas related to flood risk management. In her current role as the headquarters Levee Safety Program Manager for USACE, she is responsible for overseeing implementation of the agency’s Levee Safety Program. This involves leading the development and issuance of program policies, serving as technical advisor on levee safety aspects and issues, prioritizing the agency’s program activities, and fostering partnerships by serving on related national committees and task forces. Ms. Conforti has a B.S. in civil engineering from Virginia Tech and is a registered professional engineer.</p>
         <p>Ms. Conforti will present “The Evolution of Levee Safety within the U.S.” Topics discussed will include national challenges such as: state of the infrastructure, development patterns, expectations and behavior, and resource constraints and other considerations. The transformation from “levees” to “levee safety” will be discussed. Other topics include: implementing the USACE Levee Safety Program Risk Framework, USACE–FEMA joint efforts, and USACE Levee related policy updates.</p>
       </div>
 
-      <h2 id="schedule">Schedule – Friday, October 17, 2014</h2>
+      <h2 id="schedule" class="schedule-header">Schedule</h2>
+
+      <h3>Friday, October 17, 2014</h3>
 
       <ol class="schedule">
         <li itemprop="subEvent" itemscope itemtype="http://schema.org/Event">
