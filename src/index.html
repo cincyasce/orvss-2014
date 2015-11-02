@@ -1,21 +1,56 @@
 <@page.layout subtitle="Coming soon">
-
-    <p>Information regarding the 2015 ORVSS Seminar will be posted soon!</p>
-
     <@callout />
+
+
+    <@overview />
+
+    <@deadlines />
+
 </@page.layout>
 
 
 <#macro callout>
     <div class="callout">
         <p>${event.host}</p>
-        <p>46<sup>th</sup> Annual Ohio River Valley Soils Seminar</p>
+        <p>${headline()}</p>
 
-        <time class="date" datetime="${event.date}">${event.date}</time>
-        <address class="address">
-            <a href="http://www.horseshoecincinnati.com">Horseshoe Cincinnati</a><br>
-            1000 Broadway<br>
-            Cincinnati, OH 45202
-        </address>
+        <time class="date" datetime="${event.date}">${event.date?date('yyyy-MM-dd')?string.full}</time>
+        <@address />
     </div>
+</#macro>
+
+
+<#function headline>
+    <#local occurance = event.date?date('yyyy-MM-dd')?string('yyyy')?number - 1969 />
+    <#return occurance + "<sup>th</sup> Annual Ohio River Valley Soils Seminar" />
+</#function>
+
+<#---
+    Address
+-->
+<#macro address>
+    <address class="address">
+        <a href="${event.address.url}" target="_blank">${event.address.line1}</a><br>
+        ${event.address.line2}<br>
+        ${event.address.city}, ${event.address.state} ${event.address.zip}<br>
+    </address>
+</#macro>
+
+
+<#macro overview>
+    <h2 id="overview">Overview</h2>
+    <#list event.overview as paragraph>
+        <p>${paragraph}</p>
+    </#list>
+</#macro>
+
+
+<#macro deadlines>
+    <h2 id="deadlines">Deadlines</h2>
+    <dl>
+        <#list event.deadlines as deadline>
+            <dt>${deadline.name}</dt>
+            <dd>${deadline.date?date('yyyy-MM-dd')?string.full}</dd>
+        </#list>
+    </dl>
 </#macro>

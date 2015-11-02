@@ -1,8 +1,40 @@
 {
     "host": "Kentucky Geotechnical Engineering Group",
-    "date": "2015-12-16"
-
-
-
-
+    "topic": "Grouting Solutions to Geotechnical Problems",
+    "date": "2015-12-16",
+    "address": {
+        "line1": "Griffin Gate Marriot Resort & Spa",
+        "line2": "1800 Newtown Pike",
+        "city": "Lexington",
+        "state": "Kentucky",
+        "zip": "40511",
+        "url": "http://www.marriott.com/hotels/travel/lexky-griffin-gate-marriott-resort-and-spa/"
+    },
+    "overview": [
+        "Grouting is a versatile and effective solution for many geotechnical issues.  There are numerous types of grouting that can be tailored to address a diverse range of objectives.  As geotechnical and geology professionals, grouting is an important aspect of temporary works, including seepage and groundwater control, ground improvement, foundation support and many other geotechnical applications.  The Kentucky Geotechnical Engineering Group (KGEG) is issuing this Call for Abstracts with an emphasis on “Grouting Solutions for Geotechnical Problems” for the 46th Annual Ohio River Valley Soils Seminar (ORVSS XLVI) to be held on December 16, 2016 at the Griffin Gate Marriott Resort and Spa in Lexington, Kentucky.",
+        "Presentations may include case histories, state of practice and advancements in the field of grouting for different techniques and engineering objectives.  These may include compaction grouting, low, medium or high mobility grouting, jet grouting, compensation grouting, permeation grouting, chemical grouting or bitumen grouting. Objectives may include soil improvement, seepage control, karst/sinkhole remediation, groundwater control, structural, stabilization or jacking.  Presentations should highlight the engineering aspects and objectives of grouting to address geotechnical issues.  This may include the design of grouting programs, design of grout mixes and rheology, engineering objectives of grouting, design and analysis considerations.  Abstracts will be selected for presentation during the one-day seminar, with the selected presentations distributed to the event attendees as part of the Seminary Proceedings.",
+        "The goal of ORVSS XLVI is to provide Geotechnical Engineers, Geologists, Contractors, Material Suppliers, and other geotechnical practitioners an opportunity to share innovative applications of grouting techniques to continue the advancement of our knowledge in this field."
+    ],
+    "deadlines": [
+        {
+            "name": "Receipt of typewritten one-page abstract",
+            "date": "2015-10-09"
+        },
+        {
+            "name": "Notice of acceptance",
+            "date": "2015-10-23"
+        },
+        {
+            "name": "Receipt of final papers",
+            "date": "2015-11-13"
+        },
+        {
+            "name": "Final papers sent out for publishing",
+            "date": "2015-11-20"
+        },
+        {
+            "name": "Receipt of presentations for seminar",
+            "date": "2015-12-11"
+        }
+    ]
 }
