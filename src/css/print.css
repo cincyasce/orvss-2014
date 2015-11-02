@@ -70,6 +70,7 @@ address {
   font-size: 21px;
   margin: 0;
 }
+.registration-form,
 .event-menu,
 .page-footer {
   display: none;

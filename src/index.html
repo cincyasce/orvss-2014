@@ -14,8 +14,8 @@
     <link rel="canonical" href="http://orvss.com">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="css/styles.min.css?v=16" media="screen">
-    <link rel="stylesheet" type="text/css" href="css/print.min.css?v=16" media="print">
+    <link rel="stylesheet" type="text/css" href="css/styles.min.css?v=17" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/print.min.css?v=17" media="print">
   </head>
   <body itemscope itemtype="http://schema.org/BusinessEvent">
     <meta itemprop="eventStatus" content="http://schema.org/EventScheduled">
@@ -227,6 +227,26 @@
         <div class="page-break"></div>
 
         <h2 id="registration">Registration</h2>
+
+        <form class="registration-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <fieldset>
+            <legend class="sr-only">Registration form</legend>
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="YUF4EN5DE8DQW">
+            <input type="hidden" name="currency_code" value="USD">
+
+            <label for="registration-options" class="sr-only">Registration options</label>
+            <select id="registration-options" name="os0" size="3">
+              <option value="Early Individual Registration">Early Individual Registration $150.00 USD</option>
+              <option value="Early Full-time Student Registration">Early Full-time Student Registration $40.00 USD</option>
+              <option value="Exhibitor Registration">Exhibitor Registration $395.00 USD</option>
+              <option value="Add. Individual Registration with Paid Exhibitor (Limit 2)">Add. Individual Registration with Paid Exhibitor (Limit 2) $75.00 USD</option>
+            </select>
+
+            <input class="buy-now" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </fieldset>
+        </form>
 
         <h3>Prices</h3>
 
