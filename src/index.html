@@ -174,7 +174,8 @@
 <#macro registration>
     <h2 id="registration">Registration</h2>
 
-    <p><em>Note: Paypal links will be added soon!</em></p>
+    <@form />
+
 
     <#local prices = event.registration.prices />
 
@@ -239,6 +240,27 @@
         <li>Coffee and pastries during registration </li>
         <li>Morning and afternoon refreshment breaks</li>
     </ul>
+</#macro>
+
+<#macro form>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="hosted_button_id" value="KKEQYAWC62XH6">
+    <table>
+    <tr><td><input type="hidden" name="on0" value="Registration Type">Registration Type</td></tr><tr><td><select name="os0">
+                <#--<option value="Regular Individual Registration">Regular Individual Registration $175.00 USD</option>-->
+                <option value="Early Individual Registration">Early Individual Registration $150.00 USD</option>
+                <#--<option value="Student Individual Registration">Student Individual Registration $50.00 USD</option>-->
+                <option value="Early Student Individual Registration">Early Student Individual Registration $25.00 USD</option>
+                <option value="Exhibitor Registration">Exhibitor Registration $425.00 USD</option>
+                <option value="Additional Individual Registration with Paid Exhibitor">Additional Individual Registration with Paid Exhibitor $75.00 USD</option>
+    </select> </td></tr>
+    </table>
+    <input type="hidden" name="currency_code" value="USD">
+    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+
 </#macro>
 
 
