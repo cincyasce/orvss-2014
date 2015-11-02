@@ -1,22 +1,19 @@
 {
-  "name": "orvss-2014",
+  "name": "orvss.com",
   "version": "0.0.0",
-  "description": "Source for the ORVSS 2014 page",
+  "description": "Source for the orvss.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cincyasce/orvss-2014.git"
+    "url": "https://github.com/cincyasce/orvss.com.git"
   },
   "keywords": [
     "ASCE",
     "Gulp",
     "LESS"
   ],
-  "author": "Evangelia Dendramis",
+  "author": "Evangelia Dendramis <evangeliad@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/cincyasce/orvss-2014/issues"
-  },
-  "homepage": "https://github.com/cincyasce/orvss-2014",
+  "homepage": "http://orvss.com",
   "dependencies": {
     "gulp": "^3.8.7",
     "gulp-autoprefixer": "0.0.10",
