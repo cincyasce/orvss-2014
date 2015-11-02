@@ -236,9 +236,32 @@
 //footer
 
 .page-footer {
+  font-size: @font-size-small;
   text-align: center;
+  background-color: #333;
+  color: #FFF;
+  margin-top: 36px;
+  padding: 12px 0;
 
-  border-top: 1px solid @border-gray;
 
-  padding: 24px 0;
+  .page-width {
+    @media (min-width: @screen-sm-min) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+
+  .created-by {
+    font-size: 12px;
+
+    @media (min-width: @screen-sm-min) {
+      font-size: @font-size-small;
+    }
+
+    a {
+      color: #DDD;
+    }
+  }
+
 }

@@ -44,8 +44,10 @@ h6 {
   font-weight: normal;
   line-height: 1.5;
 }
-dd {
-  margin: 0;
+@media screen {
+  dd {
+    margin: 0;
+  }
 }
 sup {
   line-height: 1;
@@ -262,9 +264,38 @@ address {
   font-weight: bold;
 }
 .page-footer {
+  font-size: 14px;
   text-align: center;
-  border-top: 1px solid #dddddd;
-  padding: 24px 0;
+  background-color: #333;
+  color: #FFF;
+  margin-top: 36px;
+  padding: 12px 0;
+}
+@media (min-width: 768px) {
+  .page-footer .page-width {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+.page-footer .created-by {
+  font-size: 12px;
+}
+@media (min-width: 768px) {
+  .page-footer .created-by {
+    font-size: 14px;
+  }
+}
+.page-footer .created-by a {
+  color: #DDD;
 }
 .sr-only {
   position: absolute;

@@ -31,8 +31,10 @@ h6 {
   font-weight: normal;
   line-height: 1.5;
 }
-dd {
-  margin: 0;
+@media screen {
+  dd {
+    margin: 0;
+  }
 }
 sup {
   line-height: 1;
@@ -49,6 +51,9 @@ address {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+.page-break {
+  page-break-before: always;
 }
 .page-header .logo {
   height: 76px;
