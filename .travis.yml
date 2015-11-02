@@ -5,16 +5,13 @@ install: ant all
 
 
 after_success:
-  if ([ "$TRAVIS_BRANCH" == "master" ] || [ ! -z "$TRAVIS_TAG" ]) &&
-      [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
+  if ([ "$TRAVIS_BRANCH" == "master" ]); then
     echo "This will deploy! $(date)"
   else
     echo "This will not deploy!"
   fi
 
 node_js:
-  - "0.10"
-  - "0.11"
   - "0.12"
 
 script:
