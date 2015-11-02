@@ -120,11 +120,32 @@
   }
 }
 .schedule {
-  &:extend(.list-unstyled);
 
-  .time {
+  @left-col-width: 130px;
+  @event-spacing: 12px;
+
+  dt {
+    width: @left-col-width;
     display: block;
-    margin-top: .6rem;
+    float: left;
+    & + dd {
+      margin-top: @event-spacing;
+      &:extend(.clearfix all);
+    }
+  }
+
+  dd {
+    display: block;
+    margin-left: @left-col-width;
+    & + dt {
+      margin-top: @event-spacing;
+    }
+  }
+
+  .break,
+  .lunch,
+  .closing-remarks {
+    font-weight: bold;
   }
 }
 

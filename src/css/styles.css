@@ -1,15 +1,17 @@
-.event-menu,
-.schedule {
+.event-menu {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 .page-header::before,
-.page-header::after {
+.page-header::after,
+.schedule dt + dd::before,
+.schedule dt + dd::after {
   content: " ";
   display: table;
 }
-.page-header::after {
+.page-header::after,
+.schedule dt + dd::after {
   clear: both;
 }
 * {
@@ -152,9 +154,25 @@ address {
 .schedule-header + h3 {
   margin-top: 0;
 }
-.schedule .time {
+.schedule dt {
+  width: 130px;
   display: block;
-  margin-top: .6rem;
+  float: left;
+}
+.schedule dt + dd {
+  margin-top: 12px;
+}
+.schedule dd {
+  display: block;
+  margin-left: 130px;
+}
+.schedule dd + dt {
+  margin-top: 12px;
+}
+.schedule .break,
+.schedule .lunch,
+.schedule .closing-remarks {
+  font-weight: bold;
 }
 .page-footer {
   text-align: center;
