@@ -1,11 +1,14 @@
 <@page.layout subtitle="Coming soon">
     <@callout />
 
-
+    <@menu />
     <@overview />
-
     <@deadlines />
-
+    <@keynote />
+    <@schedule />
+    <@contact />
+    <@registration />
+    <@sponsors />
 </@page.layout>
 
 
@@ -25,6 +28,41 @@
     <#return occurance + "<sup>th</sup> Annual Ohio River Valley Soils Seminar" />
 </#function>
 
+
+<#macro menu>
+    <#local links = [
+        {
+            "title": "Overview",
+            "url": "#overview"
+        },
+        {
+            "title": "Keynote",
+            "url": "#keynote"
+        },
+        {
+            "title": "Schedule",
+            "url": "#schedule"
+        },
+        {
+            "title": "Contact Information",
+            "url": "#contact"
+        },
+        {
+            "title": "Registration",
+            "url": "#registration"
+        },
+        {
+            "title": "Sponsors",
+            "url": "#sponsors"
+        }
+    ]/>
+
+    <ul role="menu" class="event-menu"><#t>
+        <#list links as link>
+            <li><a href="${link.url}">${link.title}</a></li><#t>
+        </#list>
+    </ul><#t>
+</#macro>
 <#---
     Address
 -->
@@ -33,7 +71,11 @@
         <a href="${event.address.url}" target="_blank">${event.address.line1}</a><br>
         ${event.address.line2}<br>
         ${event.address.city}, ${event.address.state} ${event.address.zip}<br>
+        <a href="tel:${event.address.phone?join("")}" class="phone-number">${event.address.phone?join("-")}</a>
     </address>
+
+    <iframe class="event-map" frameborder="0"
+        src="https://www.google.com/maps/embed/v1/view?zoom=16&center=38.0931%2C-84.4871&key=${mapsApiKey}" allowfullscreen></iframe>
 </#macro>
 
 
@@ -47,10 +89,157 @@
 
 <#macro deadlines>
     <h2 id="deadlines">Deadlines</h2>
-    <dl>
-        <#list event.deadlines as deadline>
-            <dt>${deadline.name}</dt>
-            <dd>${deadline.date?date('yyyy-MM-dd')?string.full}</dd>
+
+    <table class="deadline-table">
+        <tbody>
+            <#list event.deadlines as deadline>
+                <tr>
+                    <td>${deadline.name}</td>
+                    <td>${deadline.date?date('yyyy-MM-dd')?string.full}</td>
+                </tr>
+            </#list>
+        </tbody>
+    </table>
+</#macro>
+
+
+<#macro keynote>
+    <h2 id="keynote">Keynote</h2>
+
+    <div class="keynote-details" itemprop="performer" itemscope itemtype="http://schema.org/Person">
+        <img itemprop="image" src="img/2015/keynote.jpg" alt="Keynote speaker" title="${event.keynote.name}">
+
+        <div class="speaker">
+            <div class="name">
+                <span itemprop="name">${event.keynote.name}</span>, <span itemprop="honorificSuffix">${event.keynote.title}</span>
+            </div>
+        </div>
+    </div>
+
+    <#list event.keynote.description as paragraph>
+        <p>${paragraph}</p>
+    </#list>
+</#macro>
+
+
+<#macro contact>
+    <h2 id="contact">Contact</h2>
+
+    <#list event.contact?keys as key>
+        <#if key == "registration">
+            <h3>Registration</h3>
+        <#elseif key == "exhibitors">
+            <h3>Exhibitors</h3>
+        </#if>
+
+        <#local contactOption = event.contact[key] />
+
+        ${contactOption.name}<#if contactOption.title??>, ${contactOption.title!}</#if><br>
+        <a href="mailto:${contactOption.email}">${contactOption.email}</a><br>
+        <a href="tel:${contactOption.phone?join("")}" class="phone-number">${contactOption.phone?join("-")}</a><br>
+    </#list>
+
+    <h3>Location and Lodging</h3>
+
+    <@address />
+
+</#macro>
+
+
+<#macro schedule>
+    <h2 id="schedule">Schedule</h2>
+
+    <p><em>Note: Final schedule will be available soon.</em></p>
+
+    <table class="schedule-table">
+        <tbody>
+            <#list event.schedule as item>
+                <tr>
+                    <td>${item.time[0]?time("hh:mm a")?string("h:mm")}–${item.time[1]?time("hh:mm a")?string("h:mm a")?lower_case}</td>
+                    <td>
+                        ${item.name}
+                        <#if item.speaker??>
+                            <br>${item.speaker.name}<#if item.speaker.title??>, ${item.speaker.title}</#if><#rt>
+                            <#if item.speaker.company??>, ${item.speaker.company}</#if><#lt>
+                        </#if>
+                    </td>
+                </tr>
+            </#list>
+        </tbody>
+    </table>
+</#macro>
+
+<#macro registration>
+    <h2 id="registration">Registration</h2>
+
+    <p><em>Note: Paypal links will be added soon!</em></p>
+
+    <#local prices = event.registration.prices />
+
+    <table class="deadline-table">
+        <thead>
+            <tr>
+                <th colspan="2">Students</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Early Full-time Student Registration</td>
+                <td>${prices.student.early}</td>
+            </tr>
+            <tr>
+                <td>Regular Full-time Student Registration</td>
+                <td>${prices.student.regular}</td>
+            </tr>
+        </tbody>
+        <thead>
+            <tr>
+                <th colspan="2">Non-students</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Early Individual Registration</td>
+                <td>${prices.nonStudent.early}</td>
+            </tr>
+            <tr>
+                <td>Regular Individual Registration</td>
+                <td>${prices.nonStudent.regular}</td>
+            </tr>
+        </tbody>
+        <thead>
+            <tr>
+                <th colspan="2">Exhibitors</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Exhibitor Registration</td>
+                <td>${prices.exhibitors.regular}</td>
+            </tr>
+            <tr>
+                <td>Additional Individual Registration with Paid Exhibitor (Limit 2 per paid Exhibitor Registration)</td>
+                <td>${prices.exhibitors.additional}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Cost of Registration Includes:</h3>
+
+    <ul>
+        <li>Seminar admission and Exhibitor’s Fair</li>
+        <li>Coffee and pastries during registration </li>
+        <li>Morning and afternoon refreshment breaks</li>
+    </ul>
+</#macro>
+
+
+<#macro sponsors>
+    <h2 id="sponsors">Sponsors</h2>
+
+    <ul>
+        <#list event.sponsors as sponsor>
+            <li>${sponsor}</li>
         </#list>
-    </dl>
+    </ul>
 </#macro>

@@ -65,6 +65,13 @@ address {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+.phone-number {
+  color: #333333;
+}
+.phone-number:hover {
+  color: #333333;
+  cursor: default;
+}
 .page-break {
   page-break-before: always;
 }

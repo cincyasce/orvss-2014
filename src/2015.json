@@ -7,7 +7,8 @@
         "line2": "1800 Newtown Pike",
         "city": "Lexington",
         "state": "Kentucky",
-        "zip": "40511",
+        "zip": "40511-1330",
+        "phone": ["877", "901", "6632"],
         "url": "http://www.marriott.com/hotels/travel/lexky-griffin-gate-marriott-resort-and-spa/"
     },
     "overview": [
@@ -36,5 +37,141 @@
             "name": "Receipt of presentations for seminar",
             "date": "2015-12-11"
         }
+    ],
+    "keynote": {
+        "name": "James Warner",
+        "title": "Consulting Engineer",
+        "location": "Mariposa, California",
+        "image": "img/2015/keynote.jpg",
+        "description": [
+            "James Warner is an independent Consulting Engineer specializing in foundation and structural restoration, with emphasis on pressure grouting and the allied fields of structural problem diagnosis, material performance, testing, and the solution of construction problems.",
+            "As president and general manager of Warner Engineering Services in Los Angeles, California for 27  years, he directed the prosecution of several thousand significant projects within his area of specialization.",
+            "To his credit are numerous inventions and developments relating to engineering and construction technology.  He has served on a wide variety of technical panels, advisory groups, and review boards as well as regularly appearing as a lecturer at universities and technical meetings throughout the world.",
+            "He is a Registered Professional Engineer as well as a Licensed Building and Engineering Contractor in California.  A Fellow and Life Member of the American Society of Civil Engineers, he served on the Publications Committee of the Construction Division and the Committee on Grouting from 1966 to 1982, heading several task projects. He currently serves on the Geo-Institute Grouting Committee.",
+            "Mr. Warner has also participated in numerous educational programs at many universities and technical events and has authored many publications associated with rehabilitation and application of grouting techniques."
+        ]
+    },
+    "contact": {
+        "registration": {
+            "name": "Ben Webster",
+            "title": "PE",
+            "email": "Ben.Webster@stantec.com",
+            "phone": ["859", "422", "3182"]
+        },
+        "exhibitors": {
+            "name": "Luis J. Arduz",
+            "title": "PE, MASCE",
+            "email": "Luis.Arduz@stantec.com",
+            "phone": ["859", "422", "3051"]
+        }
+    },
+    "schedule": [
+        {
+            "name": "Exhibitor Registration and Setup",
+            "time": ["6:30 am", "7:30 am"]
+        },
+        {
+            "name": "Registration",
+            "time": ["7:30 am", "8:15 am"]
+        },
+        {
+            "name": "Welcome Remarks",
+            "time": ["8:15 am", "8:30 am"],
+            "speaker": {
+                "name": "TBD"
+            }
+        },
+        {
+            "name": "TBD",
+            "time": ["8:30 am", "9:05 am"]
+        },
+        {
+            "name": "TBD",
+            "time": ["9:05 am", "9:40 am"]
+        },
+        {
+            "name": "TBD",
+            "time": ["9:40 am", "10:15 am"]
+        },
+        {
+            "name": "<strong>Break</strong>",
+            "time": ["10:15 am", "10:35 am"]
+        },
+        {
+            "name": "TBD",
+            "time": ["10:35 am", "11:10 am"]
+        },
+        {
+            "name": "TBD",
+            "time": ["11:10 am", "11:45 am"]
+        },
+        {
+            "name": "<strong>Lunch</strong>",
+            "time": ["11:45 am", "12:35 pm"]
+        },
+        {
+            "name": "Keynote Introduction",
+            "time": ["12:35 pm", "12:45 pm"],
+            "speaker": {
+                "name": "Daniel Gilbert",
+                "title": "PE",
+                "company": "Stantec Consulting Services Inc."
+            }
+        },
+        {
+            "name": "<strong>Keynote</strong>: TBD",
+            "time": ["12:45 pm", "1:40 pm"],
+            "speaker": {
+                "name": "James Warner",
+                "title": "Consulting Engineer"
+            }
+        },
+        {
+            "name": "TBD",
+            "time": ["1:40 pm", "2:15 pm"]
+        },
+        {
+            "name": "<strong>Break</strong>",
+            "time": ["2:15 pm", "2:45 pm"]
+        },
+        {
+            "name": "TBD",
+            "time": ["2:45 pm", "3:20 pm"]
+        },
+        {
+            "name": "TBD",
+            "time": ["3:20 pm", "3:55 pm"]
+        },
+        {
+            "name": "TBD",
+            "time": ["3:55 pm", "4:30 pm"]
+        },
+        {
+            "name": "<strong>Closing Remarks</strong>",
+            "time": ["4:30 pm", "4:45 pm"]
+        }
+    ],
+    "registration": {
+        "prices": {
+            "student": {
+                "early": "$25",
+                "regular": "$50"
+            },
+            "nonStudent": {
+                "early": "$150",
+                "regular": "$175"
+            },
+            "exhibitors": {
+                "regular": "$425",
+                "additional": "$75"
+            }
+        }
+    },
+    "sponsors": [
+        "ASCE Cincinnati Section Geotechnical Group",
+        "Kentucky Geotechnical Engineering Group, ASCE",
+        "University of Cincinnati, Department of Civil and Environmental Engineering",
+        "University of Kentucky, Department of Civil Engineering",
+        "University of Louisville, Department of Civil and Environmental Engineering"
     ]
 }

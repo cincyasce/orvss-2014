@@ -16,4 +16,5 @@ modes: [
 ]
 data: {
 	event: json(2015.json)
+    mapsApiKey: AIzaSyC-W_eXa78wokf2H5cv-RBlb1GuLk_Im2Y
 }
