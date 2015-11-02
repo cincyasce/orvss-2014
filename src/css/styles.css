@@ -118,9 +118,6 @@ address {
 .page-header .event-meta dd {
   display: inline-block;
 }
-.page-header .event-meta .time:after {
-  content: " @ ";
-}
 .event-menu {
   border-bottom: 0.1rem solid #dddddd;
   border-top: 0.1rem solid #dddddd;
