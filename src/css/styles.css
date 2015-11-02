@@ -319,7 +319,8 @@ address {
   width: 137px;
 }
 .event-map {
-  border: 0;
+  border: 1px solid #333;
   width: 300px;
   height: 225px;
+  margin-top: 27px;
 }
