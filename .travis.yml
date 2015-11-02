@@ -5,8 +5,14 @@ install: ant all
 
 
 after_success:
-  echo "This will deploy! $(date)"
-  
+  - cd build
+  - git init
+  - git add -A
+  - git remote add origin https://github.com/cincyasce/orvss.com.git
+  - git commit -m "Generated at $(date)"
+  - git push -f origin master:gh-pages
+  - rm -fr .git
+
 node_js:
   - "0.12"
 
