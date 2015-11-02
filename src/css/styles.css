@@ -324,12 +324,14 @@ address {
   height: 225px;
   margin-top: 27px;
 }
-.registration-form .dropdown-label {
+.registration-form .form-label {
   display: block;
   margin-bottom: 6px;
 }
+.registration-form .text-input,
 .registration-form .dropdown {
   border: 1px solid #ccc;
+  border-radius: 0;
   height: 42px;
   line-height: 40px;
   padding: 0 6px;
@@ -341,5 +343,10 @@ address {
 @media (min-width: 768px) {
   .registration-form .dropdown {
     width: auto;
+  }
+}
+@media (min-width: 768px) {
+  .registration-form .text-input {
+    width: 400px;
   }
 }

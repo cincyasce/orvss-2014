@@ -282,9 +282,10 @@
         <input type="hidden" name="cmd" value="_s-xclick">
         <input type="hidden" name="hosted_button_id" value="KKEQYAWC62XH6">
         <input type="hidden" name="on0" value="Registration Type">
+        <input type="hidden" name="on1" value="Registrant Name">
         <input type="hidden" name="currency_code" value="USD">
 
-        <label class="dropdown-label" for="os0">Registration type</label>
+        <label class="form-label" for="os0">Registration type</label>
         <select id="os0" name="os0" class="dropdown" required>
             <#--<option value="Regular Individual Registration">Regular Individual Registration $175.00 USD</option>-->
             <option value="Early Individual Registration">Early Individual Registration $150.00 USD</option>
@@ -293,6 +294,9 @@
             <option value="Exhibitor Registration">Exhibitor Registration $425.00 USD</option>
             <option value="Additional Individual Registration with Paid Exhibitor">Additional Individual Registration with Paid Exhibitor $75.00 USD</option>
         </select>
+
+        <label class="form-label">Registrant name(s)</label>
+        <input type="text" name="os1" maxlength="200" class="text-input">
 
         <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
