@@ -68,13 +68,19 @@
 <#---
     Address
 -->
-<#macro address>
+<#macro address showLodging=false>
     <address class="address">
         <a href="${event.address.url}" target="_blank">${event.address.line1}</a><br>
         ${event.address.line2}<br>
         ${event.address.city}, ${event.address.state} ${event.address.zip}<br>
         <a href="tel:${event.address.phone?join("")}" class="phone-number">${event.address.phone?join("-")}</a>
     </address>
+
+    <#if showLodging>
+        <h3>Webpage Lodging Options</h3>
+
+        <a href="http://www.marriott.com/hotels/travel/lexky-griffin-gate-marriott-resort-and-spa/" target="_blank">http://www.marriott.com/hotels/travel/lexky-griffin-gate-marriott-resort-and-spa/</a>
+    </#if>
 
     <iframe class="event-map" frameborder="0"
         src="https://www.google.com/maps/embed/v1/place?q=Griffin%20Gate%20Marriot%20Resort%20%26%20Spa&key=${mapsApiKey}" allowfullscreen></iframe>
@@ -143,7 +149,7 @@
 
     <h3>Location and Lodging</h3>
 
-    <@address />
+    <@address showLodging=true />
 
 </#macro>
 
